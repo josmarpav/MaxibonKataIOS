@@ -1,12 +1,12 @@
 PODS:
-  - SwiftCheck (0.7.1)
+  - SwiftCheck (0.8.0)
 
 DEPENDENCIES:
   - SwiftCheck
 
 SPEC CHECKSUMS:
-  SwiftCheck: 4c4ff33a309381220c67d4605c407d50efc47360
+  SwiftCheck: b9e20cd4088a534907fedb2d11d095f9d5fef1dc
 
 PODFILE CHECKSUM: 370ab1a86f5eb253d49939637d1ed988b2ea9f51
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

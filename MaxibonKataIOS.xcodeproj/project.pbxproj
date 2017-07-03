@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E0076DA71B6357DC7B49CE7 /* Pods_MaxibonKataIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA91912154A164DBF90453 /* Pods_MaxibonKataIOSTests.framework */; };
+		3FE32F9D1F07A15C005A063E /* KarumiHQsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE32F9C1F07A15C005A063E /* KarumiHQsSpec.swift */; };
+		3FE32F9F1F07A9C0005A063E /* DeveloperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE32F9E1F07A9C0005A063E /* DeveloperSpec.swift */; };
 		BC9F3DB3D6BA81F0D12BB06B /* Pods_MaxibonKataIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544E92D89A2293E5C76FC0F /* Pods_MaxibonKataIOS.framework */; };
 		EBC26D0B1D24415F00838900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC26D0A1D24415F00838900 /* AppDelegate.swift */; };
 		EBC26D0D1D24415F00838900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC26D0C1D24415F00838900 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 		0A56F408968C759E39C50989 /* Pods-MaxibonKataIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxibonKataIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxibonKataIOS/Pods-MaxibonKataIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2544E92D89A2293E5C76FC0F /* Pods_MaxibonKataIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxibonKataIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FA91912154A164DBF90453 /* Pods_MaxibonKataIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaxibonKataIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE32F9C1F07A15C005A063E /* KarumiHQsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarumiHQsSpec.swift; sourceTree = "<group>"; };
+		3FE32F9E1F07A9C0005A063E /* DeveloperSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperSpec.swift; sourceTree = "<group>"; };
 		8672D19BF26C279DBF51A859 /* Pods-MaxibonKataIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxibonKataIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxibonKataIOSTests/Pods-MaxibonKataIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8BFEA222C6BA5A65940E65E /* Pods-MaxibonKataIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxibonKataIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaxibonKataIOS/Pods-MaxibonKataIOS.release.xcconfig"; sourceTree = "<group>"; };
 		EBC26D071D24415F00838900 /* MaxibonKataIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxibonKataIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,8 @@
 				EBCD242C1D24578C0007923F /* Test Doubles */,
 				EBC26D311D24446700838900 /* Generators */,
 				EBC26D211D24415F00838900 /* Info.plist */,
+				3FE32F9C1F07A15C005A063E /* KarumiHQsSpec.swift */,
+				3FE32F9E1F07A9C0005A063E /* DeveloperSpec.swift */,
 			);
 			path = MaxibonKataIOSTests;
 			sourceTree = "<group>";
@@ -337,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8D76766D3480C9CBDAD53E70 /* [CP] Check Pods Manifest.lock */ = {
@@ -352,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D67EAF26AEB387FFF8CEB96F /* [CP] Embed Pods Frameworks */ = {
@@ -392,6 +398,8 @@
 			files = (
 				EBCD24261D244F210007923F /* ArbitraryDeveloper.swift in Sources */,
 				EBCD242E1D24579D0007923F /* MockSlack.swift in Sources */,
+				3FE32F9D1F07A15C005A063E /* KarumiHQsSpec.swift in Sources */,
+				3FE32F9F1F07A9C0005A063E /* DeveloperSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
